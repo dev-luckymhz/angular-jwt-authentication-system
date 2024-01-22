@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+
+.mdk-drawer-layout {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.mdk-drawer-layout__content {
+  position: relative;
+  height: 100%;
+  -webkit-transition: -webkit-transform .2s;
+  transition: transform .2s;
+  min-width: 320px;
+  z-index: 0;
+}
+
+.mdk-drawer-layout__content--scrollable {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.mdk-drawer-layout__content .container>.card {
+  margin-bottom: 30px;
+}
+
+
+.card.card-login {
+  width: 75%;
+}
+
+
+.input-group--inline {
+  position: relative;
+}
+
+.input-group--inline .input-group-addon {
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+  vertical-align: middle;
+  z-index: 2;
+  padding: 0;
+  border: 0;
+  color: #424770;
+  padding: 0 .625rem;
+}
+
+.input-group--inline .form-control:not(:first-child) {
+  text-indent: 1.875rem;
+  z-index: auto;
+  border-radius: 5px;
+}
+
+.input-group--inline .form-control:not(:first-child):active,
+.input-group--inline .form-control:not(:first-child):focus,
+.input-group--inline .form-control:not(:first-child):hover {
+  z-index: auto;
+}
+
+
+.navbar-dark .nav-item .input-group .input-group-addon {
+  color: hsla(0, 0%, 100%, .54);
+}

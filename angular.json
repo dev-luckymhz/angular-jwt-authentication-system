@@ -25,6 +25,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/simplebar/dist/simplebar.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -94,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
