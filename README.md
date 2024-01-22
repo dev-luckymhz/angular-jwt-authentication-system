@@ -1,27 +1,84 @@
-# AuthAngularApp
+# Angular JWT Authentication System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+## Screenshots
 
-## Development server
+<div align="center">
+  <img src="./screenshot/login.png" alt="Angular Login Page" width="300" style="margin-right: auto">
+  <img src="./screenshot/register.png" alt="Angular Registration Page" width="300">
+</div>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Overview
 
-## Code scaffolding
+This project is an Angular-based authentication system using JSON Web Tokens (JWT). It provides a robust and secure way of handling user authentication in Angular applications.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- **User Registration**: Allows new users to create an account.
+- **User Login**: Enables users to log in to the application.
+- **Authenticated User Data Retrieval**: Displays data of the authenticated user.
+- **Toasts for Notifications**: Uses a toaster component for displaying messages.
+- **Reactive Forms**: Utilizes Angular Reactive Forms for handling form inputs.
+- **Bootstrap Styling**: Styled with Bootstrap for a responsive and modern UI.
+- **HTTP Interceptor**: Includes an interceptor to add `withCredentials` to all backend requests.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+### Prerequisites
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Node.js
+- Angular CLI
 
-## Running end-to-end tests
+## Installation
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **Clone the repository**:
+   ```bash
+   git clone <repository-url>
+   ```
 
-## Further help
+2. **Navigate to the project directory**:
+   ```bash
+   cd <project-name>
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+4. **Run the application**:
+   ```bash
+   ng serve
+   ```
+
+5. **Open your browser** and navigate to `http://localhost:4200`.
+
+## Usage
+
+### Registration
+
+1. Navigate to the **Registration** page.
+2. Fill in the required fields.
+3. Submit the form to create a new user account.
+
+### Login
+
+1. Navigate to the **Login** page.
+2. Enter your credentials.
+3. Submit the form to log in.
+
+### Viewing Authenticated User Data
+
+- Once logged in, navigate to the **Authenticated User** component to view your data.
+
+## Contact
+
+For any queries or contributions, feel free to connect with me:
+
+- [![Email](https://img.shields.io/badge/Email-ambinintsoa.business%40gmail.com-blue)](mailto:ambinintsoa.business@gmail.com)
+- [![LinkedIn](https://img.shields.io/badge/LinkedIn-ambinintsoa--zo-blue)](https://linkedin.com/in/ambinintsoa-zo/)
+
+## Acknowledgments
+
+- Angular Team for the amazing framework.
+- Bootstrap for the UI components.
+- Community contributors and everyone who supports this project.
