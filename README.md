@@ -32,12 +32,12 @@ This project is an Angular-based authentication system using JSON Web Tokens (JW
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/dev-ambinintsoa/angular-jwt-authentication-system.git
    ```
 
 2. **Navigate to the project directory**:
    ```bash
-   cd <project-name>
+   cd angular-jwt-authentication-system
    ```
 
 3. **Install dependencies**:
