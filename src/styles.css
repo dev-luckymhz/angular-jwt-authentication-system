@@ -1,8 +1,44 @@
-.card.card-login {
-  width: 75%;
+/* Common Styles */
+.full-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: url("src/assets/background.jpg") no-repeat center;
+  background-size: cover;
 }
 
 
+/* Form Styles */
+input.form-control {
+  border: 1px solid #ced4da;
+}
+
+input.form-control:focus {
+  background: transparent;
+  border-color: #f0f8ff;
+  box-shadow: 0 0 0 0.2rem rgba(128, 189, 255, 0.25);
+  transition: 0.5s;
+}
+
+.auth-form-box {
+  width: 400px;
+}
+
+.card-login,
+.card-signup {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 20px;
+  backdrop-filter: blur(15px) brightness(80%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Input Group Styles */
 .input-group--inline {
   position: relative;
 }
@@ -13,7 +49,6 @@
   pointer-events: none;
   vertical-align: middle;
   z-index: 2;
-  padding: 0;
   border: 0;
   color: #424770;
   padding: 0 .625rem;
@@ -22,7 +57,12 @@
 .input-group--inline .form-control:not(:first-child) {
   text-indent: 1.875rem;
   z-index: auto;
-  border-radius: 5px;
+  border-radius: 10px;
+}
+
+label {
+  color: #fff;
+  font-size: 1em;
 }
 
 .input-group--inline .form-control:not(:first-child):active,
@@ -31,6 +71,101 @@
   z-index: auto;
 }
 
-.navbar-dark .nav-item .input-group .input-group-addon {
-  color: hsla(0, 0%, 100%, .54);
+/* Register Styles */
+.register {
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+  margin: 25px 0 10px;
+}
+
+.register p a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.register p a:hover {
+  text-decoration: underline;
+}
+
+/* Authentication Form Styles */
+.auth-form-title {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+}
+
+.auth-button {
+  margin-top: .2rem;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #f0f8ff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+}
+
+.hero {
+  margin: 0;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #f0f1f3 url("src/assets/background.jpg");
+}
+
+
+.welcome {
+  box-sizing: border-box;
+  padding: 75px 50px;
+  width: 100%;
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: 0px 10px 50px 0 rgb(31 38 135 / 20%);
+  backdrop-filter: blur(25.0px);
+  -webkit-backdrop-filter: blur(25.0px);
+  border-radius: 10px;
+  border: 1px solid rgb(255 255 255 / 15%);
+  text-align: center;
+}
+
+
+.welcome-title {
+  font-size: 36px;
+  line-height: 1.2em;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.welcome-subtitle {
+  font-size: 20px;
+  line-height: 1.5em;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+}
+
+.welcome-heading {
+  font-size: 16px;
+  line-height: 0.8em;
+  color: #ffffff94;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-bottom: -15px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .auth-form-box {
+    width: 100%;
+    border-radius: 0px;
+  }
 }

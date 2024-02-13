@@ -1,14 +1,12 @@
 <div class="full-page-container">
-  <div class="" style="overflow-y: auto;" data-simplebar data-simplebar-force-enabled="true">
-    <div class="container h-vh d-flex justify-content-center align-items-center flex-column">
-      <div class="d-flex justify-content-center align-items-center mb-3">
-        <span> <!-- SVG Logo here --> </span>
-        <h2 class="ml-2 text-bg mb-0"><strong>Authenticate</strong></h2>
-      </div>
-      <div class="row w-100 justify-content-center">
-        <div class="card card-login mb-3">
+  <app-toast #toast></app-toast>
+    <div class="d-flex justify-content-center align-items-center flex-column">
+      <div class="justify-content-center">
+        <div class="card card-login">
           <div class="card-body">
-            <form [formGroup]="loginForm" (ngSubmit)="login()">
+            <h2 class="my-1 auth-form-title"><strong>Login</strong></h2>
+            <br>
+            <form [formGroup]="loginForm" (ngSubmit)="login()" class="auth-form-box">
               <div class="form-group">
                 <label>Username</label>
                 <div class="input-group input-group--inline">
@@ -32,19 +30,16 @@
                 </div>
                 <small class="text-danger" *ngIf="f['password'].touched && f['password'].invalid">Password is required</small>
               </div>
+              <br>
               <div class="text-center">
-                <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Login</button>
+                <button type="submit" class="auth-button" [disabled]="!loginForm.valid">Login</button>
+              </div>
+              <div class="d-flex justify-content-center register">
+                <p class="mr-2">Don't have an account? <a routerLink="/signup">Sign Up</a></p>
               </div>
             </form>
           </div>
         </div>
       </div>
-
-      <div class="d-flex justify-content-center">
-        <span class="mr-2">Don't have an account?</span>
-        <a routerLink="/signup">Sign Up</a>
-      </div>
     </div>
-
-  </div>
 </div>
