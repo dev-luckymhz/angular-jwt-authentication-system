@@ -6,10 +6,12 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  private loginUrl = 'http://yourapi.com/login';
-  private registerUrl = 'http://yourapi.com/register';
-  private logoutUrl = 'http://yourapi.com/logout';
-  private userUrl = 'http://yourapi.com/user';
+  private baseUrl = 'http://localhost:3000/api/auth';
+
+  private loginUrl = `${this.baseUrl}/login`;
+  private registerUrl = `${this.baseUrl}/register`;
+  private logoutUrl = `${this.baseUrl}/logout`;
+  private userUrl = `${this.baseUrl}/profile`;
 
   constructor(private http: HttpClient) { }
 
@@ -17,7 +19,7 @@ export class AuthService {
     return this.http.post(this.loginUrl, credentials);
   }
 
-  register(data: { firstname: string, lastname: string, company: string, email: string, password: string }): Observable<any> {
+  register(data: { firstName: string, lastName: string, company: string, email: string, username: string, password: string }): Observable<any> {
     return this.http.post(this.registerUrl, data);
   }
 

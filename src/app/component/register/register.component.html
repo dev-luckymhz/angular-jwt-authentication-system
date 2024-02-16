@@ -14,26 +14,26 @@
                       <div class="input-group-addon">
                         <i class="material-icons">person</i>
                       </div>
-                      <input type="text" class="form-control" formControlName="firstname">
+                      <input type="text" class="form-control" formControlName="firstName">
                       <!-- Validation messages -->
                     </div>
-                    <div *ngIf="f['firstname'].touched && f['firstname'].invalid">
-                      <small class="text-danger" *ngIf="f['firstname'].errors?.['required']">First name is required</small>
-                      <small class="text-danger" *ngIf="f['firstname'].errors?.['minlength']">First name must be at least 2 characters</small>
+                    <div *ngIf="f['firstName'].touched && f['firstName'].invalid">
+                      <small class="text-danger" *ngIf="f['firstName'].errors?.['required']">First name is required</small>
+                      <small class="text-danger" *ngIf="f['firstName'].errors?.['minlength']">First name must be at least 2 characters</small>
                     </div>
                   </div>
                   <div class="form-group col-md-6">
                     <label>Last Name</label>
                     <div class="input-group input-group--inline">
                       <div class="input-group-addon">
-                        <i class="material-icons">person</i>
+                        <i class="material-icons">face</i>
                       </div>
-                      <input type="text" class="form-control" formControlName="lastname">
+                      <input type="text" class="form-control" formControlName="lastName">
                       <!-- Validation messages -->
                     </div>
-                    <div *ngIf="f['lastname'].touched && f['lastname'].invalid">
-                      <small class="text-danger" *ngIf="f['lastname'].errors?.['required']">Last name is required</small>
-                      <small class="text-danger" *ngIf="f['lastname'].errors?.['minlength']">Last name must be at least 2 characters</small>
+                    <div *ngIf="f['lastName'].touched && f['lastName'].invalid">
+                      <small class="text-danger" *ngIf="f['lastName'].errors?.['required']">Last name is required</small>
+                      <small class="text-danger" *ngIf="f['lastName'].errors?.['minlength']">Last name must be at least 2 characters</small>
                     </div>
                   </div>
                 </div>
@@ -58,6 +58,19 @@
                   <div *ngIf="f['email'].touched && f['email'].invalid">
                     <small class="text-danger" *ngIf="f['email'].errors?.['required']">Email is required</small>
                     <small class="text-danger" *ngIf="f['email'].errors?.['email']">Please enter a valid email</small>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Username</label>
+                  <div class="input-group input-group--inline">
+                    <div class="input-group-addon">
+                      <i class="material-icons">account_circle</i>
+                    </div>
+                    <input type="text" class="form-control" formControlName="username">
+                  </div>
+                  <div *ngIf="f['username'].touched && f['username'].invalid">
+                    <small class="text-danger" *ngIf="f['username'].errors?.['required']">Username is required</small>
+                    <small class="text-danger" *ngIf="f['username'].errors?.['email']">Last name must be at least 5 characters</small>
                   </div>
                 </div>
                 <div class="form-group">

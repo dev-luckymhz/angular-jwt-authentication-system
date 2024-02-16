@@ -9,6 +9,7 @@ import {ToastComponent} from "./component/toast/toast.component";
 import {RegisterComponent} from "./component/register/register.component";
 import {LoginComponent} from "./component/login/login.component";
 import {WithCredentialInterceptor} from "./interceptors/with-credential.interceptor";
+import {LogoutComponent} from "./component/logout.component";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {WithCredentialInterceptor} from "./interceptors/with-credential.intercep
     LoginComponent,
     RegisterComponent,
     ToastComponent,
-    AuthenticatedComponent
+    AuthenticatedComponent,
+    LogoutComponent,
   ],
     imports: [
         BrowserModule,

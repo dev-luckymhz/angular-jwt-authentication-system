@@ -1,10 +1,8 @@
 # Angular JWT Authentication System
 
-## Screenshots
-
 <div align="center">
-  <img src="./screenshot/login.png" alt="Angular Login Page" width="300" style="margin-right: auto">
-  <img src="./screenshot/register.png" alt="Angular Registration Page" width="300">
+<h3 align="center">Demo</h3>
+  <img src="./screenshot/login-angular-screenshot.gif" alt="Angular Login Page">
 </div>
 
 ## Overview

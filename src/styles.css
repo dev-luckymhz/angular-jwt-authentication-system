@@ -1,4 +1,3 @@
-/* Common Styles */
 .full-page-container {
   display: flex;
   justify-content: center;
@@ -10,7 +9,6 @@
 }
 
 
-/* Form Styles */
 input.form-control {
   border: 1px solid #ced4da;
 }
@@ -38,7 +36,7 @@ input.form-control:focus {
   align-items: center;
 }
 
-/* Input Group Styles */
+
 .input-group--inline {
   position: relative;
 }
@@ -71,7 +69,10 @@ label {
   z-index: auto;
 }
 
-/* Register Styles */
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .register {
   font-size: 0.9em;
   color: #fff;
@@ -89,7 +90,7 @@ label {
   text-decoration: underline;
 }
 
-/* Authentication Form Styles */
+
 .auth-form-title {
   font-size: 2em;
   color: #fff;

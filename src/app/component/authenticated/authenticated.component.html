@@ -1,8 +1,10 @@
 <div class="hero">
   <div class="welcome">
     <h3 class="welcome-heading">WELCOME</h3>
-    <h1 class="welcome-title mt-3">Mr. </h1>
+    <h1 class="welcome-title mt-3">Mr. {{ authenticatedUser?.firstName }} {{ authenticatedUser?.lastName }}</h1>
     <h2 class="welcome-subtitle">This is an example of a JWT authentication system in Angular, showcasing the implementation and security features.</h2>
-    <br />
+    <div class="d-flex justify-content-center register">
+      <p class="">You can test the logout <a (click)="logout()" class="cursor-pointer">Here!</a></p>
+    </div>
   </div>
 </div>
